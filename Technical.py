@@ -3,11 +3,13 @@ from colorama import Fore
 drills_t = dict()
 drills_t_func = list()
 # Difficulty; Materials; position; amount of people
+#start
 drills_t["1. Skill Goal"] = "Medium; Ball, Marked Goal; Striker, Winger; 1 person minimum"
 def Skill_Goal():
   print(Fore.YELLOW+"\nStart from differnt positions outside the box. Perform 3-5 skills moves while dribbling in and shoot on goal while not too close to the goal. Do this 10 times.")
 drills_t_func.append(Skill_Goal)
-#
+#end
+#start
 drills_t["2. Goal Points"] = "Medium; Ball, Marked Goal; Striker; 1 person minimum"
 def Goal_Points():
   print(Fore.YELLOW+"\nShoot at goal from the PK line, with or without keeper(With keeper is harder). If you score in any of the corners, you get 5 points. If you score on the left or right side, you get 3 points. If you miss or if it is saved it is -2 points. If you score in the center of the goal, it is -3. If you hit the post it is +1. If you score at the top of the goal, it is +2. You must try to get 50 points.")
@@ -30,3 +32,4 @@ def Goal_Points():
       points = points + 2
   print(Fore.GREEN+"\nYou took " + shots + " shots to reach 50 points!")
 drills_t_func.append(Goal_Points)
+#end
